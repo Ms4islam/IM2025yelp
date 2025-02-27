@@ -1,0 +1,7 @@
+# The Restaurant type represents a place where food is served.
+type Restaurant @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  name: String!
+  description: String!
+  owner: String!
+}
